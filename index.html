@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer-count">
+            <p id="count">00:59</p>
+        </div>
+        <div class="control-panel">
+            <input type="button" value="Start game!" id="start">
+            <input type="button" value="Check result" id="checkRes" disabled>
+            <input type="button" value="New Game" id="refresh">
+        </div>
+        <div class="game-area">
+            <div class="puzzle">
+                <table class="start-block">
+                    <tr>
+                        <td><img></td>
+                        <td><img></td>
+                        <td><img></td>
+                        <td><img></td>
+                    </tr>
+                    <tr>
+                        <td><img></td>
+                        <td><img></td>
+                        <td><img></td>
+                        <td><img></td>                        
+                    </tr>
+                    <tr>
+                        <td><img></td>
+                        <td><img></td>
+                        <td><img></td>
+                        <td><img></td>
+                    </tr>
+                    <tr>
+                        
+                        <td><img></td>
+                        <td><img></td>
+                        <td><img></td>
+                        <td><img></td>
+                        
+                    </tr>
+                </table>
+            </div>
+            <div class="table">
+                <table class="result-block">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="modal-container">
+            <div class="modal">
+                <p>You still have time, you sure?</p>
+                <div class="buttons">
+                    <input type="button" value="close" id="close">
+                    <input type="button" value="check" id="check">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./jquerry.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+        integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
